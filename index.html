@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Diego Sebastian</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__barra">
+        <a href="#" class="logo">Portafo<span>lio.</span></a>
+        <ul class="menu">
+          <li class="menu__lista">
+            <a href="#" class="menu__enlace" onclick="toggleMenu();">Home</a>
+          </li>
+          <li class="menu__lista">
+            <a href="#about" class="menu__enlace" onclick="toggleMenu();"
+              >Sobre Mi</a
+            >
+          </li>
+          <li class="menu__lista">
+            <a href="#know" class="menu__enlace" onclick="toggleMenu();"
+              >Conocimientos</a
+            >
+          </li>
+          <li class="menu__lista">
+            <a href="#project" class="menu__enlace" onclick="toggleMenu();"
+              >Proyectos</a
+            >
+          </li>
+          <li class="menu__lista">
+            <a href="#" class="menu__enlace" onclick="toggleMenu();"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+        <div class="btn-menu" onclick="toggleMenu();">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div class="hero__texto contenedor">
+        <div class="text-1">Hola, mi nombre es</div>
+        <div class="text-2">Diego Sebastián</div>
+        <div class="text-3">y soy <span class="typed"></span></div>
+        <a href="#" class="boton boton__hero">Contacto</a>
+      </div>
+    </header>
+    <main>
+      <section class="about" id="about">
+        <div class="contenedor">
+          <div class="titulo-about titulo titulo-claro">
+            <h2 class="titulo__seccion">Sobre Mi</h2>
+          </div>
+          <div class="about__contenido">
+            <div class="about__imagen">
+              <img src="img/profile-1.jpeg" alt="Diego Sebastián" />
+            </div>
+            <div class="about__presentacion">
+              <h3 class="presentacion__titulo">
+                Soy Diego y soy <span class="type-two">Autodidacta</span>
+              </h3>
+              <p class="presentacion__parrafo">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Mollitia dolor voluptate animi quae repellendus omnis,
+                blanditiis iusto nisi nam, totam explicabo reiciendis odit
+                reprehenderit odio tempora tenetur qui nesciunt nemo. <br />
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt,
+                minima placeat numquam ab esse culpa nobis atque possimus illo
+                quam!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="know" id="know">
+        <div class="contenedor">
+          <article>
+            <div class="titulo-know titulo titulo-oscuro">
+              <h2 class="titulo__seccion">Conocimientos</h2>
+            </div>
+            <div class="know__contenido">
+              <div class="card__know">
+                <i class="card__icono fas fa-laptop-code"></i>
+                <h3 class="card__titulo">Front-End</h3>
+                <p class="card__parrafo">
+                  Implementación, conocimiento y buen manejo de diferentes
+                  tecnologias Front-End para el desarrollo, lógica y diseño de
+                  paginas y aplicaciones web.
+                </p>
+              </div>
+
+              <div class="card__know">
+                <i class="card__icono fas fa-database"></i>
+                <h3 class="card__titulo">Back-End</h3>
+                <p class="card__parrafo">
+                  Conocimientos de lenguaje de base de datos y de programación
+                  Back-End para el traslado y recolección de diferentes tipos de
+                  datos.
+                </p>
+              </div>
+
+              <div class="card__know">
+                <i class="card__icono fas fa-code-branch"></i>
+                <h3 class="card__titulo">Control de Versiones</h3>
+                <p class="card__parrafo">
+                  Habilidad con las diferentes ramas, versiones y buen control
+                  de la distrubución de los proyectos utilizando el sistema para
+                  el control de versiones.
+                </p>
+              </div>
+
+              <div class="card__know">
+                <i class="card__icono fas fa-project-diagram"></i>
+                <h3 class="card__titulo">Analisis y Diseño</h3>
+                <p class="card__parrafo">
+                  Implementación, conocimiento y buen manejo de diferentes
+                  tecnologias Front-End para el desarrollo, lógica y diseño de
+                  paginas y aplicaciones web.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="subtitulo-know">
+              <h3 class="titulo__seccion"></h3>
+            </div>
+
+            <div class="carousel">
+              <div class="carousel__contenedor">
+                <button aria-label="Anterior" class="carousel__anterior">
+                  <i class="fas fa-angle-left"></i>
+                </button>
+
+                <div class="carousel__lista">
+                  <div class="carousel__elemento">
+                    <i class="fab fa-html5"></i>
+                    <h3 class="title-elemento">HTML5</h3>
+                    <p class="text-elemento">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Fuga, beatae?
+                    </p>
+                  </div>
+
+                  <div class="carousel__elemento">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3 class="title-elemento">CSS</h3>
+                    <p class="text-elemento">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Fuga, beatae?
+                    </p>
+                  </div>
+
+                  <div class="carousel__elemento">
+                    <i class="fab fa-sass"></i>
+                    <h3 class="title-elemento">Sass</h3>
+                    <p class="text-elemento">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Fuga, beatae?
+                    </p>
+                  </div>
+
+                  <div class="carousel__elemento">
+                    <i class="fab fa-js-square"></i>
+                    <h3 class="title-elemento">Javascript</h3>
+                    <p class="text-elemento">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Fuga, beatae?
+                    </p>
+                  </div>
+
+                  <div class="carousel__elemento">
+                    <i class="fab fa-git-alt"></i>
+                    <h3 class="title-elemento">Git</h3>
+                    <p class="text-elemento">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Fuga, beatae?
+                    </p>
+                  </div>
+
+                  <div class="carousel__elemento">
+                    <i class="fab fa-node-js"></i>
+                    <h3 class="title-elemento">Node.js</h3>
+                    <p class="text-elemento">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Fuga, beatae?
+                    </p>
+                  </div>
+
+                  <div class="carousel__elemento">
+                    <i class="fas fa-database"></i>
+                    <h3 class="title-elemento">MySQL</h3>
+                    <p class="text-elemento">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Fuga, beatae?
+                    </p>
+                  </div>
+
+                  <div class="carousel__elemento">
+                    <i class="fab fa-node-js"></i>
+                    <h3 class="title-elemento">PHP</h3>
+                    <p class="text-elemento">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Fuga, beatae?
+                    </p>
+                  </div>
+                </div>
+
+                <button aria-label="Siguiente" class="carousel__siguiente">
+                  <i class="fas fa-angle-right"></i>
+                </button>
+              </div>
+
+              <div role="tablist" class="carousel__indicadores"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="project" id="project">
+        <div class="contenedor">
+          <div class="titulo-project titulo titulo-claro">
+            <h2 class="titulo__seccion">Proyectos</h2>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    
+    <script src="https://kit.fontawesome.com/45035c67c2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
